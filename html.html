@@ -4,6 +4,9 @@
   <title>WEB1 - HTML</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="colors.js"></script>
 </head>
 <body>
   <h1><a href="index1.html">Welcome to YHDream</a></h1>
@@ -13,15 +16,19 @@
     <li><a href="html.html">HTML</a></li>
     <li><a href="css.html">CSS</a></li>
     <li><a href="javascript.html">JavaScript</a></li>
-  </ol>
+  </ol><br>
+
+  <input type="button" value="토글1: 야간모드로 변경" onclick="
+    NightDayHandler1(this);
+  "><br>
 
   <h2>HTML</h2>
-<ul>
-  <li>용어 : <a href="https://www.w3.org/TR/html52/" target="_blank"
-    title="html 5.2 Specification">HyperText Markup Language [HTML]</a></li>
-  <li>정체성 : <strong>[ 정보(Infomation) ]</strong> 중심</li>
-  <li>like.. : 웹페이지의 <u>뼈대</u> - [ tag ]</li>
-</ul>
+  <ul>
+    <li>용어 : <a href="https://www.w3.org/TR/html52/" target="_blank"
+      title="html 5.2 Specification">HyperText Markup Language [HTML]</a></li>
+    <li>정체성 : <strong>[ 정보(Infomation) ]</strong> 중심</li>
+    <li>like.. : 웹페이지의 <u>뼈대</u> - [ tag ]</li>
+  </ul>
 
   <img src="coding.jpg" width="100%" alt="coding">
 
