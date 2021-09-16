@@ -4,6 +4,56 @@
   <title>WEB1 - JavaScript</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    var Body = {
+      setColor : function (color){
+        document.querySelector('body').style.color = color;
+      },
+      setBackgroundColor : function (color){
+        document.querySelector('body').style.backgroundColor = color;
+      }
+    }
+
+    var Links = {
+      setColor : function (color){
+        var links = document.querySelectorAll('a');
+        var i = 0;
+        while(i<links.length){
+          links[i].style.color = color ;
+          i=i+1;
+        }
+      }
+    }
+
+    function NightDayHandler1(self){
+      var target = document.querySelector('body');
+      if(self.value === '토글1: 야간모드로 변경'){
+        Body.setBackgroundColor('black');
+        Body.setColor('white');
+        self.value = '토글1: 주간모드로 변경';
+        Links.setColor('powderblue');
+      } else {
+        Body.setBackgroundColor('white');
+        Body.setColor('black');
+        self.value = '토글1: 야간모드로 변경';
+        Links.setColor('blue');
+      }
+    }
+    function NightDayHandler2(self){
+      var target = document.querySelector('body');
+      if(self.value === '토글2: 야간모드로 변경'){
+        Body.setBackgroundColor('black');
+        Body.setColor('white');
+        self.value = '토글2: 주간모드로 변경';
+        Links.setColor('tomato');
+      } else {
+        Body.setBackgroundColor('white');
+        Body.setColor('black');
+        self.value = '토글2: 야간모드로 변경';
+        Links.setColor('red');
+      }
+    }
+  </script>
 </head>
 <body>
   <h1><a href="index1.html">Welcome to YHDream</a></h1>
@@ -14,7 +64,7 @@
     <li><a href="css.html">CSS</a></li>
     <li><a href="javascript.html">JavaScript</a></li>
   </ol>
-  <h2>JavaScript</h2>
+  <h2 style="background-color:coral;color:powderblue">JavaScript</h2>
   <input type="button" value="야간모드" onclick="
     document.querySelector('body').style.backgroundColor='black';
     document.querySelector('body').style.color='white';
@@ -22,7 +72,16 @@
   <input type="button" value="주간모드" onclick="
     document.querySelector('body').style.backgroundColor='white';
     document.querySelector('body').style.color='black';
+  "><br><br>
+
+  <h3 style="background-color:powderblue;color:tomato">Object Test</h3>
+  <input type="button" value="토글1: 야간모드로 변경" onclick="
+    NightDayHandler1(this);
   ">
+  <input type="button" value="토글2: 야간모드로 변경" onclick="
+    NightDayHandler2(this);
+  ">
+
   <p>
     JavaScript (/ˈdʒɑːvəˌskrɪpt/),[9] often abbreviated as JS, is a programming language that conforms to the ECMAScript specification.[10] JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.
     Alongside HTML and CSS, JavaScript is one of the core technologies of the World Wide Web.[11] Over 97% of websites use it client-side for web page behavior,[12] often incorporating third-party libraries.[13] Most web browsers have a dedicated JavaScript engine to execute the code on the user's device.
