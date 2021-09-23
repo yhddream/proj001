@@ -1,3 +1,9 @@
+.textbox{
+    background-color: tomato;
+    width: 340px;
+    text-align: center;
+    padding: 30px;
+}
 h1 {
   text-align: center;
   margin-top: 30px;
