@@ -1,3 +1,14 @@
+h1 {text-align: center;
+    margin-top: 30px;
+    font-size: 50px;}
+  
+h1 span:nth-child(1) {color: #4285f4;}
+h1 span:nth-child(2) {color: #ea4335;}
+h1 span:nth-child(3) {color: #fbbc05;}
+h1 span:nth-child(4) {color: #4285f4;}
+h1 span:nth-child(5) {color: #34a853;}
+h1 span:nth-child(6) {color: #ea4335;}
+
 .textbox{
     background-color: tomato;
     width: 340px;
@@ -5,32 +16,3 @@
     padding: 30px;
 }
 
-h1 {
-  text-align: center;
-  margin-top: 30px;
-  font-size: 50px;
-}
-
-h1 span:nth-child(1) {
-    color: #4285f4;
-}
-
-h1 span:nth-child(2) {
-    color: #ea4335;
-}
-
-h1 span:nth-child(3) {
-    color: #fbbc05;
-}
-
-h1 span:nth-child(4) {
-    color: #4285f4;
-}
-
-h1 span:nth-child(5) {
-    color: #34a853;
-}
-
-h1 span:nth-child(6) {
-    color: #ea4335;
-}
